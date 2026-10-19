@@ -1,0 +1,35 @@
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Cột bên trái */
+.left-column {
+    width: 60%;
+    float: left;
+    background-color: lightblue;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Cột bên phải */
+.right-column {
+    width: 38%;
+    float: right;
+    background-color: lightgreen;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Xử lý float để container bao quanh hai cột */
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
